@@ -1,0 +1,33 @@
+header
+{
+    width: 100%;
+    background-color: var(--bg-color2);
+    
+
+    nav
+    {
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img
+        {
+            width: 100px;
+            margin-left: 15px;
+        }
+
+        .menu-nav
+        {
+            ul
+            {
+                display: flex;
+                
+                a
+                {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
