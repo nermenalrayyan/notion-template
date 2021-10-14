@@ -1,0 +1,87 @@
+#:import hex kivy.utils.get_color_from_hex
+
+<NotionWidget>
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width*0.157, root.height
+        cols: 1
+        canvas:
+            Color:
+                rgba: hex("F7F6F3")
+            Rectangle:
+                size: self.width ,self.height
+                pos: self.pos
+
+    Widget:
+        size: root.width*0.843, root.height*0.1
+        pos: root.pos[0]+241, root.pos[1]+777
+        canvas.before:
+            Color:
+                rgba: hex("#FFFFFF")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Image:
+            pos: root.pos[0]+270, root.pos[1]+830
+            size: 15, 15
+            source: "pictures/house_icon.png"
+        Label:
+            text: "Club Homepage"
+            color: hex("37352F")
+            pos: root.pos[0]+300, root.pos[1]+786
+            size_hint: 0.3,0.3
+            bold: False
+
+        Label:
+            text: "Share"
+            color: hex("37352F")
+            pos: root.pos[0]+1300, root.pos[1]+786
+            size_hint: 0.3,0.3
+            bold: False
+
+        Image:
+            pos: root.pos[0]+1500, root.pos[1]+826
+            size: 20,20
+            source: "pictures/ezgif.com-gif-maker (5).png"
+
+        Image:
+            pos: root.pos[0]+1390, root.pos[1]+826
+            size: 20,20
+            source: "pictures/ezgif.com-gif-maker (6).png"
+
+        Image:
+            pos: root.pos[0]+1427, root.pos[1]+826
+            size: 20,20
+            source: "pictures/ezgif.com-gif-maker (7).png"
+
+        Image:
+            pos: root.pos[0]+1465, root.pos[1]+827
+            size: 20,20
+            source: "pictures/ezgif.com-gif-maker (8).png"
+
+    ScrollView:
+        size: root.width*0.843, root.height*0.94
+        pos: root.pos[0]+241, root.pos[1]
+        do_scroll_x: False
+        do_scroll_y: True
+        GridLayout:
+        #Background Image
+            canvas:
+                Color:
+                    rgba: hex("#FFFFFF")
+                Rectangle:
+                    size: self.width, self.height*0.28
+                    pos: self.pos[0], self.pos[1]+585
+                    source: "pictures/weird people smiling.jpg"
+
+            canvas.before:
+                Color:
+                    rgba: hex("#FFFFFF")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+            Image:
+                pos: root.pos[0]+280, root.pos[1]+530
+                size: self.size
+                source: "pictures/ezgif.com-gif-maker (2).png"
