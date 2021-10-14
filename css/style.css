@@ -155,7 +155,7 @@ header nav {
 }
 
 header nav img {
-  width: 100px;
+  width: 26px;
   margin-left: 15px;
 }
 
@@ -167,6 +167,23 @@ header nav .menu-nav ul {
 
 header nav .menu-nav ul a {
   padding: 15px;
+}
+
+:root {
+  --color1: #37352F;
+  --color2: #E0E0DF;
+  --color3: #62605B;
+  --color4: #F7FCFE;
+  --color5: #AFAEAC;
+  --color6: #C3C2C0;
+  --color7: #878682;
+  --bg-color1: #2EAADC;
+  --bg-color2: #F7F6F5;
+  --bg-color3: #FFF6E6;
+  --bg-color4: #FFE8E7;
+  --bg-color5: #E8F4E6;
+  --bg-color6: #FAFAFA;
+  --border-color: rgba(55, 53, 47, 0.09);
 }
 
 .button-1 {
@@ -205,6 +222,48 @@ header nav .menu-nav ul a {
   border: 2px solid var(--border-color1);
   -webkit-box-shadow: var(--box-shadow1);
           box-shadow: var(--box-shadow1);
+}
+
+/*
+bootstrap 5 responsive screen sizes:
+
+* They include x-small which is between 0 and 576px.
+
+* Small, which has the sm class infix is 576px or larger. // Screens (Smaller Smartphones)
+
+* Medium, which has the md class infix is 768px or larger. // Screens (Tablets And Larger Smartphones)
+
+* Large, which has the lg class infix is 992px or larger.
+
+* Extra-large, which is infixed by xl , is 1200px or larger. // Screens (Laptops)
+
+* Extra extra large, which is infixed by xxl , is 1400px or larger. // Screens (Larger Desktops And Monitors)
+*/
+header {
+  border-bottom: 3px solid var(--border-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header nav .nav-left {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .nav-left .title-page {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+header nav .nav-left .title-page img {
+  margin-right: 15px;
 }
 
 .footer {

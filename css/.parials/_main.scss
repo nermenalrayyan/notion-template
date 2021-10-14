@@ -1,0 +1,27 @@
+header
+{
+    border-bottom: 3px solid var(--border-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    nav
+    {
+        .nav-left
+        {
+            display: inline-flex;
+            align-items: center;
+
+            .title-page
+            {
+                display: inline-flex;
+                
+                img 
+                {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
