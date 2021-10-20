@@ -19,12 +19,21 @@
         <!-- End Title -->
 
 
+        <link rel="stylesheet" href="css/bootstrap.css">
 
         <!-- start links -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
         <!-- المصدر: https://cdnjs.com/libraries/font-awesome -->
 		
         <link rel="stylesheet" href="css/style.css">
+
+
+        <!-- Fonts Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
 
         <link rel="stylesheet" href="css/normalize.css">
         <!--normalize يجعل الصفحة سليمة و يصلح المشاكل الموجودة فيها / رابط الموقع https://necolas.github.io/normalize.css/-->
@@ -36,31 +45,280 @@
         <!-- المصدر: -->
 
         <header>
-            <nav>
-                <div class="nav-left">
-                    <div class="menu">
-                        <a href="#"><img class="icon" src="img/icons/bars-solid.svg" alt=""></a>
+            <div class="container-fluid">
+                <nav class="d-flex align-items-center">
+                    <div class="nav-left d-flex align-items-center">
+                        <div class="menu">
+                            <a href="#"><i class="fas fa-bars"></i></a>
+                        </div>
+                        <!-- <div class="back-next">
+                            <a href="#"><i class="fas fa-arrow-left"></i></a>
+
+                            <a href="#"><i class="fas fa-arrow-right"></i></a>
+                        </div> -->
+                        
+                        <div class="title-page d-flex align-items-center">
+                            <i class="fas fa-check"></i>
+                            <h5>Task List</h5>
+                        </div>
                     </div>
-                    <div class="back-next">
-                        <a href="#"><img class="icon" src="img/icons/arrow-left-solid.svg" alt=""></a>
-                        <a href="#"><img class="icon" src="img/icons/arrow-right-solid.svg" alt=""></a>
+                    <div class="nav-right">
+                        <a href="#"><i class="fas fa-share-alt"></i></a>
+                        <a href="#"><i class="far fa-bell"></i></a>
+                        <a href="#"><i class="fas fa-ellipsis-h"></i></a>
                     </div>
-                    
-                    <div class="title-page inline-flex">
-                        <img src="img/icons/check-solid.svg" alt="">
-                        <h2>Task List</h2>
-                    </div>
-                </div>
-                <div class="nav-right">
-                    <a href="#"><img class="icon" src="img/icons/share-alt-solid.svg" alt=""></a>
-                    <a href="#"><img class="icon" src="img/icons/bell-regular.svg" alt=""></a>
-                    <a href="#"><img class="icon" src="img/icons/ellipsis-h-solid.svg" alt=""></a>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
 
 
-        
+
+
+        <!-- Start description -->
+        <div class="description">
+            <div class="container">
+                <div class="description-items">
+                    <div class="top">
+                        <div class="add">
+                            <i class="small-icon icon-gray fas fa-image"></i>
+                            <h6>Add Cover</h6>
+                        </div>
+    
+                        <div class="hide">
+                            <i class="small-icon icon-gray fas fa-info-circle"></i>
+                            <h6>Hide Description</h6>
+                        </div>
+                    </div>
+    
+                    <div class="down">
+                        <div class="title-description">
+                            <div class="title">
+                                <i class="fas fa-check"></i>
+                                <h1>Task List</h1>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Nam <span>+ New</span> explicabo consequuntur aperiams.</p>
+                            <p>consectetur adipisicing elit. Enim pariatur exercitationem.</p>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+        <!-- End description -->
+
+
+
+        <!-- Start Table -->
+        <div class="table">
+            <div class="container">
+                <div class="table-items">
+                    <div class="top d-flex justify-content-between">
+                        <div class="left d-flex align-items-center ">
+                            <a href="#" class="small-icon icon-gray"><i class="fas fa-plus"></i></a>
+                            <h5>Add a view</h5>
+                        </div>
+
+                        <div class="right d-flex align-items-center">
+                            <ul class="d-inline-flex">
+                                <li><a href="#">properties</a></li>
+                                <li><a href="#">group by: <span>status</span></a></li>
+                                <li><a href="#">filter</a></li>
+                                <li><a href="#">sort</a></li>
+                            </ul>
+
+                            <div class="search d-inline-flex align-items-center">
+                                <i class="small-icon icon-gray fas fa-search"></i>
+                                <a href="#">search</a>
+                            </div>
+
+                            <i class="icon-gray ellipsis fas fa-ellipsis-h"></i>
+
+                            <button class="d-flex align-items-center justify-content-between rounded-lg border-0">
+                                <h6 class="">New</h6>
+                                <span></span>
+                                <i class="small-icon fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="down container-fluid">
+                        <div class="list-columns d-flex justify-content-between align-items-center">
+                            <div class="item">
+                                <a class="title" href="#">to do</a>
+                                <a href="#">3</a>
+                            </div>
+                            
+                            <div class="item">
+                                <a class="title" href="#">doing</a>
+                                <a href="#">1</a>
+                            </div>
+
+                            <div class="item">
+                                <a class="title" href="#">done <img class="small-icon mr-0" src="img/icons/hands.png" alt=""></a>
+                                <a href="#">2</a>
+                            </div>
+
+                            <div class="item d-flex align-items-center justify-content-between hidden-columns">
+                                <a href="#" class="small-icon"><i class="fas fa-plus"></i></a>
+                                <p>hidden columns</p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="content d-flex">
+                            <div class="column-items">
+                                <div class="item">
+                                    <div class="content-item item-img p-0">
+                                        <img src="img/chair.jpg" alt="">
+                                    </div>
+
+                                    <div class="title d-flex align-items-center">
+                                        <img class="small-icon" src="img/icons/chair.svg" alt="">
+                                        <h6>sell couch</h6>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="content-item item-text">
+                                        <h6>location</h6>
+                                        <p>1377 fell st, san francisco, ca 94117</p>
+                                        <h6>hours</h6>
+                                        <p>10am - 4pm</p>
+                                        <p>monday - saturday</p>
+                                    </div>
+
+                                    <div class="title d-flex align-items-center">
+                                        <img class="small-icon" src="img/icons/car.svg" alt="">
+                                        <h6>Buy healthy snacks</h6>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="content-item item-form">
+                                        <form action="" class="">
+                                            
+                                            <label for="">
+                                                <input class="my-input" type="checkbox"> carrots
+                                                <!-- <span class="checkmark"></span> -->
+                                            </label><br>
+                                            
+                                            <label for="">
+                                                <input class="my-input" type="checkbox"> granola bars
+                                                <!-- <span class="checkmark"></span> -->
+                                            </label><br>
+                                            
+                                            <label for="">
+                                                <input class="my-input" type="checkbox"> yogurt
+                                                <!-- <span class="checkmark"></span> -->
+                                            </label><br>
+                                            
+                                            <label for="">
+                                                <input class="my-input" type="checkbox"> almonds
+                                                <!-- <span class="checkmark"></span> -->
+                                            </label><br>
+                                            
+                                            <label for="">
+                                                <input class="my-input" type="checkbox"> dried mangoes
+                                                <!-- <span class="checkmark"></span> -->
+                                            </label><br>
+                                            
+                                            <label for="">
+                                                <input class="my-input" type="checkbox"> bananas
+                                                <!-- <span class="checkmark"></span> -->
+                                            </label><br>
+                                        </form>
+                                    </div>
+
+                                    <div class="title d-flex align-items-center">
+                                        <img class="small-icon" src="img/icons/banana.svg" alt="">
+                                        <h6>Buy healthy snacks</h6>
+                                    </div>
+                                </div>
+
+                                <div class="new d-flex align-items-center">
+                                    <a href="#" class="small-icon"><i class="fas fa-plus"></i></a>
+                                    <h5>new</h5>
+                                </div>
+                            </div>
+
+                            <div class="column-items">
+                                <div class="item">
+                                    <div class="content-item item-text item-form">
+                                        <h6>details</h6>
+                                        <p>date: july 28th</p>
+                                        <p>cost: $55</p>
+                                        <h6>registration</h6>
+                                        <p>tasks</p>
+
+                                        <form action="" class="">
+                                            <label for="">
+                                                <input class="my-input" checked type="checkbox"> Ask Camille if she wants to join
+                                                <!-- <span class="checkmark"></span> -->
+                                            </label><br>
+                                        </form>
+                                    </div>
+
+                                    <div class="title d-flex align-items-center">
+                                        <img class="small-icon" src="img/icons/man-runing.svg" alt="">
+                                        <h6>Sign up for 5k</h6>
+                                    </div>
+                                </div>
+
+                                <div class="new d-flex">
+                                    <a href="#" class="small-icon"><i class="fas fa-plus"></i></a>
+                                    <h5>new</h5>
+                                </div>
+                            </div>
+
+                            <div class="column-items">
+                                <div class="item">
+                                    <div class="content-item item-img p-0">
+                                        <img src="img/mountain.jpg_width=950&quality=90&mode=crop" alt="">
+                                    </div>
+
+                                    <div class="title d-flex align-items-center">
+                                        <img class="small-icon" src="img/icons/mountain.svg" alt="">
+                                        <h6>Plan hiking trip to Yosemite</h6>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title d-flex align-items-center">
+                                        <img class="small-icon" src="img/icons/dog.svg" alt="">
+                                        <h6>Take Fig on a walk</h6>
+                                    </div>
+                                </div>
+
+                                <div class="new d-flex">
+                                    <a href="#" class="small-icon"><i class="fas fa-plus"></i></a>
+                                    <h5>new</h5>
+                                </div>
+                            </div>
+
+                            <div class="column-items">
+                                <div class="mail-item">
+                                    <div class="mail d-flex justify-content-between align-items-center">
+                                        <a href="#"><i class="fas fa-inbox"></i></a>
+                                        <h5>no status</h5>
+                                        <a href="#">1</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Table -->
+
+
+
+        <!-- Start Help Element -->
+        <div class="help">
+            <a href="#">?</a>
+        </div>
+        <!-- End Help Element -->
 
         <!-- start links javascript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js" integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw==" crossorigin="anonymous"></script>
