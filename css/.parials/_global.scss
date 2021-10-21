@@ -99,6 +99,16 @@ h6
     color: var(--color5);
 }
 
+.hover-gray
+{
+    padding: 5px;
+    
+    &:hover
+    {
+        background-color: #e7e3e3;
+    }
+}
+
 button, select
 {
     outline: none !important;

@@ -70,6 +70,14 @@ h6 {
   color: var(--color5);
 }
 
+.hover-gray {
+  padding: 5px;
+}
+
+.hover-gray:hover {
+  background-color: #e7e3e3;
+}
+
 button, select {
   outline: none !important;
 }
@@ -252,16 +260,11 @@ header {
   margin: 0 5px;
 }
 
-header nav .nav-left .menu i {
-  font-size: 23px;
-  color: var(--color3);
-}
-
 header nav .nav-left .title-page {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: 25px;
+  margin-left: 40px;
 }
 
 header nav .nav-left .title-page i {
@@ -292,10 +295,6 @@ header nav img {
 
 .description .description-items .top {
   width: 30%;
-}
-
-.description .description-items .top .add {
-  margin-right: 6px;
 }
 
 .description .description-items .top h6 {
@@ -338,6 +337,10 @@ header nav img {
   display: inline-flex;
 }
 
+.description .description-items .add, .description .description-items .hide {
+  padding: 10px 9px 6px 8px;
+}
+
 .description .description-items .add i, .description .description-items .hide i {
   margin-right: 7px;
   font-size: 20px;
@@ -351,12 +354,16 @@ header nav img {
   margin-top: 2%;
 }
 
+.table .table-items {
+  width: 100%;
+}
+
 .table .table-items .top {
   padding: 0;
 }
 
 .table .table-items .top .right {
-  width: 55.5%;
+  width: 61.5%;
 }
 
 .table .table-items .top .right ul {
@@ -371,6 +378,10 @@ header nav img {
   color: var(--color3);
 }
 
+.table .table-items .top .right ul li:nth-of-type(2) {
+  width: 9em;
+}
+
 .table .table-items .top .right .search {
   margin-right: 20px;
 }
@@ -379,8 +390,26 @@ header nav img {
   background: var(--bg-color1);
   width: 14%;
   height: 30px;
-  padding: 8px;
   margin-left: 20px;
+}
+
+.table .table-items .top .right button .title, .table .table-items .top .right button .icon {
+  height: 100%;
+  padding: 5px;
+}
+
+.table .table-items .top .right button .title:hover, .table .table-items .top .right button .icon:hover {
+  color: var(--color2);
+  background: #109cd5;
+  border-radius: 0.3rem;
+}
+
+.table .table-items .top .right button .icon {
+  padding-top: 8px;
+}
+
+.table .table-items .top .right button .title {
+  width: 103%;
 }
 
 .table .table-items .top .right button h6 {
@@ -441,6 +470,10 @@ header nav img {
   padding: 1px 6px;
 }
 
+.table .table-items .down .list-columns .item .title:hover {
+  background-color: #e9e1e1;
+}
+
 .table .table-items .down .list-columns .hidden-columns {
   width: 17%;
 }
@@ -464,6 +497,7 @@ header nav img {
           box-shadow: 1px 1px 10px 0 #c7c6c6;
   margin-bottom: 5px;
   width: 100%;
+  padding: 0;
 }
 
 .table .table-items .down .content .column-items .item .content-item {
@@ -535,19 +569,11 @@ header nav img {
   padding: 5px 10px;
 }
 
-.table .table-items .down .content .column-items .new:hover {
-  background-color: #e7e3e3;
-}
-
 .table .table-items .down .content .column-items .mail-item {
   width: 85%;
   margin: 6px 3px;
   padding: 3px 10px;
   margin-left: 62px;
-}
-
-.table .table-items .down .content .column-items .mail-item:hover {
-  background-color: #e7e3e3;
 }
 
 .table .table-items .down .content .column-items .mail-item .mail {
@@ -605,6 +631,87 @@ header nav img {
 
 .help a {
   font-size: 23px;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+  left: 210px;
+}
+
+#check:checked ~ header .nav-left {
+  margin-left: 207px;
+}
+
+#check:checked ~ .right-content {
+  margin-left: 357px;
+}
+
+label {
+  display: inline;
+}
+
+label #btn, label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: white;
+  border-radius: 20%;
+}
+
+label #btn {
+  top: 13px;
+  left: 5px;
+  z-index: 1;
+  /* font-size: 24px; */
+  padding: 6px 12px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 20px;
+  color: #21146c;
+  padding: 4px 9px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.menu i {
+  font-size: 23px;
+  color: var(--color3);
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 34;
+  top: 220px;
+  left: 0;
+  width: 270px;
+  max-height: 100%;
+  background-color: red;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.sidebar .nav-side {
+  height: 32%;
+  padding-left: 10px;
+  margin-top: 1.6rem;
 }
 
 .footer {

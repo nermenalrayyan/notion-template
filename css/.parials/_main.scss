@@ -14,20 +14,11 @@ header
             // display: inline-flex;
             // align-items: center;
 
-            
-            .menu
-            {
-                i
-                {
-                    font-size: 23px;
-                    color: var(--color3);
-                }
-            }
 
             .title-page
             {
                 display: inline-flex;
-                margin-left: 25px;
+                margin-left: 40px;
                 
                 i
                 {
@@ -85,10 +76,10 @@ header
             width: 30%;
             // display: none;
     
-            .add
-            {
-                margin-right: 6px;
-            }
+            // .add
+            // {
+            //     // margin-right: 6px;
+            // }
     
             h6
             {
@@ -140,6 +131,8 @@ header
 
         .add, .hide
         {
+            padding: 10px 9px 6px 8px;
+
             i
             {
                 margin-right: 7px;
@@ -164,13 +157,15 @@ header
     
     .table-items
     {
+        width: 100%;
+
         .top
         {
             padding: 0;
 
             .right
             {
-                width: 55.5%;
+                width: 61.5%;
     
                 ul
                 {   
@@ -183,6 +178,12 @@ header
                         span
                         {
                             color: var(--color3);
+                        }
+
+
+                        &:nth-of-type(2)
+                        {
+                            width: 9em;
                         }
                     }
                 }
@@ -198,8 +199,33 @@ header
                     background: var(--bg-color1);
                     width: 14%;
                     height: 30px;
-                    padding: 8px;
+                    // padding: 8px;
                     margin-left: 20px;
+
+                    .title, .icon
+                    {
+                        // width: 50%;
+                        height: 100%;
+                        padding: 5px;
+
+
+                        &:hover
+                        {
+                            color: var(--color2);
+                            background: #109cd5;
+                            border-radius: 0.3rem;
+                        }
+                    }
+
+                    .icon
+                    {
+                        padding-top: 8px;
+                    }
+
+                    .title
+                    {
+                        width: 103%;
+                    }
     
                     h6
                     {
@@ -267,6 +293,11 @@ header
                         margin-right: 13px;
                         margin-left: 5px;
                         padding: 1px 6px;
+
+                        &:hover
+                        {
+                            background-color: #e9e1e1;
+                        }
                     }
                 }
 
@@ -297,6 +328,8 @@ header
                         margin-bottom: 5px;
                         // margin-right: -60px;
                         width: 100%;
+                        padding: 0;
+
                         
                         .content-item
                         {
@@ -399,11 +432,6 @@ header
                     {
                         margin: 6px 3px;
                         padding: 5px 10px;
-
-                        &:hover
-                        {
-                            background-color: #e7e3e3;
-                        }
                     }
 
                     .mail-item
@@ -412,11 +440,6 @@ header
                         margin: 6px 3px;
                         padding: 3px 10px;
                         margin-left: 62px;
-
-                        &:hover
-                        {
-                            background-color: #e7e3e3;
-                        }
                     
                         .mail
                         {
