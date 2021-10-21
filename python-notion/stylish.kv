@@ -1,17 +1,84 @@
 #:import hex kivy.utils.get_color_from_hex
 
 <NotionWidget>
-    BoxLayout:
-        orientation: 'horizontal'
+    FloatLayout:
+        # orientation: 'vertical'
+        canvas:
+            Color:
+                rgba: (1,1,1,1)
+            Ellipse:
+                size: 35,55
+                pos: 10,800
+                source: "pictures/fed3272e56bfab8904440a7d1e8501bb.jpg"
+                angle_start: 100
+                angle_end: 300
+
         size: root.width*0.157, root.height
         cols: 1
-        canvas:
+        canvas.before:
             Color:
                 rgba: hex("F7F6F3")
             Rectangle:
                 size: self.width ,self.height
                 pos: self.pos
+        Image:
+            source: "pictures/fed3272e56bfab8904440a7d1e8501bb.jpg"
+        Image:
+            source: "pictures/fold.png"
+            pos: 210,810
+            size_hint: 0.08,0.08
+        Label:
+            text: "Ahmed Yasser's Notion"
+            color: (0,0,0,1)
+            pos: 0,390
+            size: self.size
+            font_size: 14
 
+        BoxLayout:
+            size_hint: 0.7,0.08
+            pos_hint: {'y':0.83}
+            orientation: "vertical"
+            cols:1
+
+            Label:
+                text: "Quick Find"
+                color: hex("#37352F")
+                pos_hint: {'x':-0.015}
+                size: self.size
+                font_size: 14
+            Label:
+                text: "All Updates"
+                color: hex("#37352F")
+                size: self.size
+                font_size: 14
+            Label:
+                text: "Settings & Members"
+                color: hex("#37352F")
+                pos_hint: {'x': 0.16}
+                size: self.size
+                font_size: 14
+        BoxLayout:
+            spacing: 8
+            padding:6
+            size_hint: 0.18,0.086
+            pos_hint: {'x':0.02 ,'y':0.827}
+            orientation: "vertical"
+            cols:1
+            # canvas:
+            #     Color:
+            #         rgba: (1,0,0,1)
+            #     Rectangle:
+            #         size:self.size
+            #         pos:self.pos
+            Image:
+                source: "pictures/ldpi-clock.png"
+                size: 35,35
+            Image:
+                source: "pictures/ldpi-search.png"
+                size: 30,30
+            Image:
+                source: "pictures/ldpi-settings.png"
+                size: 35,35
     Widget:
         size: root.width*0.843, root.height*0.1
         pos: root.pos[0]+241, root.pos[1]+777
@@ -27,14 +94,14 @@
             source: "pictures/house_icon.png"
         Label:
             text: "Club Homepage"
-            color: hex("37352F")
+            color: hex("#37352F")
             pos: root.pos[0]+300, root.pos[1]+786
             size_hint: 0.3,0.3
             bold: False
 
         Label:
             text: "Share"
-            color: hex("37352F")
+            color: hex("#37352F")
             pos: root.pos[0]+1300, root.pos[1]+786
             size_hint: 0.3,0.3
             bold: False
@@ -64,7 +131,7 @@
         pos: root.pos[0]+241, root.pos[1]
         do_scroll_x: False
         do_scroll_y: True
-        GridLayout:
+        Widget:
         #Background Image
             canvas:
                 Color:
