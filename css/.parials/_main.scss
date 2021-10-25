@@ -260,6 +260,9 @@ header
             .list-columns
             {   
                 width: 105%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
                 ul
                 {
@@ -269,7 +272,10 @@ header
                 .item
                 {
                     margin-right: -75px;
-                    width: 15%;
+                    width: 28.5%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
 
                     &:nth-of-type(1) .title
                     {
@@ -299,6 +305,22 @@ header
                             background-color: #e9e1e1;
                         }
                     }
+
+                    .item-menu
+                    {
+                        width: 30px;
+                        height: 28px;
+                        padding: 6px;
+                        background-color: var(--color4);
+                        box-shadow: 0 0 5px 3px #cdc3c3;
+                        display: none;
+
+                        // &:hover ~ .content > .column-items #show-hover
+                        // {
+                        //     display: block;
+                        // }
+                    }
+
                 }
 
                 .hidden-columns
@@ -312,6 +334,7 @@ header
                 }
             }
 
+
             .content
             {   
                 width: 125.5%;
@@ -320,6 +343,7 @@ header
                 {
                     width: 29.5%;
                     margin-right: 20px;
+                    transition: all .7s;
 
                     .item
                     {
@@ -335,6 +359,21 @@ header
                         {
                             padding: 15px;
                             height: 175px;
+
+                            .item-menu
+                            {
+                                width: 30px;
+                                height: 28px;
+                                padding: 6px;
+                                background-color: var(--color4);
+                                box-shadow: 0 0 5px 3px #cdc3c3;
+                                display: none;
+                            }
+                        }
+
+                        &:hover .item-menu
+                        {
+                            display: block;
                         }
 
                         .title

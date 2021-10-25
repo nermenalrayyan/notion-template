@@ -46,22 +46,136 @@
         <!-- Strat Sidebar -->
         <input type="checkbox" id="check">
         <label for="check" class="menu">
-            <i class="fas hover-gray fa-bars" id="btn"></i>
+            <i class="hover-gray fas fa-bars" id="btn"></i>
             <i class="fas fa-angle-double-left" id="cancel"></i>
         </label>
         <div class="sidebar">
+            <div class="nav-side">
+                <div class="pl-20 profile w-100 h-7 hover-gray d-flex align-items-center">
+                    <div class="icon">
+                        <h5>N</h5>
+                    </div>
+                    <div class="name">
+                        <h6>nermen's <span>Notion</span></h6>
+                    </div>
+                    <div class="icon-chevron d-flex flex-column">
+                        <i class="fas fa-chevron-up"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="w-100 navbar">
+                    <ul class="w-100">
+                        <li class=" hover-gray"><a href="#" class="pl-20"><i class="fas fa-search"></i><span>quick find</span></a></li>
+                        <li class=" hover-gray"><a href="#" class="pl-20"><i class="far fa-clock"></i><span>all updates</span></a></li>
+                        <li class=" hover-gray"><a href="#" class="pl-20"><i class="fas fa-cog"></i><span>settings & membars</span></a></li>
+                    </ul>
+                </div>
+            </div>
             
+            <div class="scrollbar">
+                <div class="content-side">
+                    <div class="favorites">
+                        <div class="head">
+                            <h5 class="hover-gray text-uppercase">favorites</h5>
+                        </div>
+                        <ul class="w-100">
+                            <li class=" hover-gray">
+                                <a href="#" class="pl-20">
+                                <i class="fas fa-caret-right"></i>
+                                <i class="far fa-file-alt"></i>
+                                <span>maiores minus Quibusdam</span>
+                            </a>
+                            </li>
+                            <li class=" hover-gray">
+                                <a href="#" class="pl-20">
+                                <i class="fas fa-caret-right"></i>
+                                <i class="far fa-file-alt"></i>
+                                <span>quos vero aliquid</span>
+                            </a>
+                            </li>
+                            <li class=" hover-gray">
+                                <a href="#" class="pl-20">
+                                <i class="fas fa-caret-right"></i>
+                                <i class="far fa-file-alt"></i>
+                                <span>aliquam magnam</span>
+                            </a>
+                            </li>
+                            <li class=" hover-gray">
+                                <a href="#" class="pl-20">
+                                <i class="fas fa-caret-right"></i>
+                                <i class="far fa-file-alt"></i>
+                                <span>neque repudiandae vel</span>
+                            </a>
+                            </li>
+                            <li class=" hover-gray">
+                                <a href="#" class="pl-20">
+                                <i class="fas fa-caret-right"></i>
+                                <i class="far fa-file-alt"></i>
+                                <span>optio repudiandae</span>
+                            </a>
+                            </li>
+                            <li class=" hover-gray">
+                                <a href="#" class="pl-20">
+                                <i class="fas fa-caret-right"></i>
+                                <i class="far fa-file-alt"></i>
+                                <span>blanditiis consequuntur odit</span>
+                            </a>
+                            </li>
+                            <li class=" hover-gray">
+                                <a href="#" class="pl-20">
+                                <i class="fas fa-caret-right"></i>
+                                <i class="far fa-file-alt"></i>
+                                <span>tenetur excepturi sit</span>
+                            </a>
+                            </li>
+                            <li class=" hover-gray">
+                                <a href="#" class="pl-20">
+                                <i class="fas fa-caret-right"></i>
+                                <i class="far fa-file-alt"></i>
+                                <span>illo perferendis</span>
+                            </a>
+                            </li>
+                            <li class=" hover-gray">
+                                <a href="#" class="pl-20">
+                                <i class="fas fa-caret-right"></i>
+                                <i class="far fa-file-alt"></i>
+                                <span>corrupti quidem tempore</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="footer-side">
+                    <div class="w-100 list-links">
+                        <ul class="w-100">
+                            <li class=" hover-gray"><a href="#" class="pl-20"><i class="fas fa-search"></i><span>quick find</span></a></li>
+                            <li class=" hover-gray"><a href="#" class="pl-20"><i class="far fa-clock"></i><span>all updates</span></a></li>
+                            <li class=" hover-gray"><a href="#" class="pl-20"><i class="fas fa-cog"></i><span>settings & membars</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new hover-gray d-flex align-items-center">
+                <a href="#" class="small-icon"><i class="fas fa-plus"></i></a>
+                <h5>new</h5>
+            </div>
         </div>
         <!-- End Sidebar -->        
 
+        <div class="right-content">
             <!-- Start Header -->
             <header>
                 <div class="container-fluid">
                     <nav class="d-flex align-items-center">
                         <div class="nav-left d-flex align-items-center">
-                            <div class="title-page hover-gray d-flex align-items-center">
-                                <i class="fas fa-check"></i>
-                                <h5>Task List</h5>
+                            <div class="title-page hover-gray">
+                                <a href="#" class="d-flex align-items-centerd-flex align-items-center">
+                                    <i class="fas fa-check"></i>
+                                    <h5>Task List</h5>
+                                </a>
                             </div>
                         </div>
                         <div class="nav-right">
@@ -78,7 +192,6 @@
     
     
     
-        <div class="right-content">
             
             <!-- Start description -->
             <div class="description">
@@ -154,23 +267,44 @@
                         </div>
     
                         <div class="down container-fluid">
-                            <div class="list-columns d-flex justify-content-between align-items-center">
+                            <div class="list-columns">
                                 <div class="item">
-                                    <a class="title hover-gray" href="#">to do</a>
-                                    <a class="hover-gray" href="#">3</a>
+                                    <div>
+                                        <a class="title hover-gray" href="#">to do</a>
+                                        <a class="hover-gray" href="#">3</a>
+                                    </div>
+
+                                    <div class="item-menu">
+                                        <a href="#" class="hover-gray"><i class="fas fa-ellipsis-h"></i></a>
+                                        <a href="#" class="hover-gray small-icon"><i class="fas fa-plus"></i></a>
+                                    </div>
                                 </div>
                                 
                                 <div class="item">
-                                    <a class="title hover-gray" href="#">doing</a>
-                                    <a class="hover-gray" href="#">1</a>
+                                    <div>
+                                        <a class="title hover-gray" href="#">doing</a>
+                                        <a class="hover-gray" href="#">1</a>
+                                    </div>
+
+                                    <div class="item-menu">
+                                        <a href="#" class="hover-gray"><i class="fas fa-ellipsis-h"></i></a>
+                                        <a href="#" class="hover-gray small-icon"><i class="fas fa-plus"></i></a>
+                                    </div>
                                 </div>
     
                                 <div class="item">
-                                    <a class="title hover-gray" href="#">done <img class="small-icon mr-0" src="img/icons/hands.png" alt=""></a>
-                                    <a class="hover-gray" href="#">2</a>
+                                    <div>
+                                        <a class="title hover-gray" href="#">done <img class="small-icon mr-0" src="img/icons/hands.png" alt=""></a>
+                                        <a class="hover-gray" href="#">2</a>
+                                    </div>
+
+                                    <div class="item-menu">
+                                        <a href="#" class="hover-gray"><i class="fas fa-ellipsis-h"></i></a>
+                                        <a href="#" class="hover-gray small-icon"><i class="fas fa-plus"></i></a>
+                                    </div>
                                 </div>
     
-                                <div class="item d-flex align-items-center justify-content-between hidden-columns">
+                                <div class="item hidden-columns">
                                     <a href="#" class="small-icon"><i class="fas hover-gray fa-plus"></i></a>
                                     <p>hidden columns</p>
                                 </div>
@@ -180,8 +314,8 @@
     
                             <div class="content d-flex">
                                 <div class="column-items">
-                                    <div class="item hover-gray">
-                                        <div class="content-item item-img p-0">
+                                    <div class="item hover-gray" id="show-hover">
+                                        <div class="hover-gray scontent-item item-img p-0">
                                             <img src="img/chair.jpg" alt="">
                                         </div>
     
@@ -257,11 +391,19 @@
                                 <div class="column-items">
                                     <div class="item hover-gray">
                                         <div class="content-item item-text item-form">
-                                            <h6>details</h6>
-                                            <p>date: july 28th</p>
-                                            <p>cost: $55</p>
-                                            <h6>registration</h6>
-                                            <p>tasks</p>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <h6>details</h6>
+                                                    <p>date: july 28th</p>
+                                                    <p>cost: $55</p>
+                                                    <h6>registration</h6>
+                                                    <p>tasks</p>
+                                                </div>
+
+                                                <div class="item-menu">
+                                                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                                </div>
+                                            </div>
     
                                             <form action="">
                                                 <label for="">

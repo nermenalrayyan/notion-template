@@ -27,18 +27,48 @@
 
     &:checked ~ label #cancel
     {
-        left: 210px;
+        left: 275px;
     }
-    &:checked ~ header .nav-left
-    {
-        margin-left: 207px;
-    }
-    
+
+    // &:checked ~ .sidebar .name
+    // {
+
+    //     &:hover, label #cancel:hover
+    //     {
+    //         // cursor: pointer;
+    //         background-color: #e7e3e3;
+    //     }
+        
+    // }
+
 
     &:checked ~ .right-content
     {
-        margin-left: 357px;
-    } 
+        margin-left: 438px;
+
+        header .nav-left
+        {
+            margin-left: 283px;
+        }
+
+        .description .top {
+            width: 35%;
+        }
+
+        .table
+        {
+            .content 
+            {
+                width: 160.5%;
+            }
+        }
+    }
+
+    &:checked ~ .down .list-columns
+    {
+        width: 135% !important;
+    }
+
 }
 
 label
@@ -47,16 +77,19 @@ label
 
     #btn, #cancel
     {
-        position: absolute;
+        position: fixed;
+        top: 13px;
+
+        // position: absolute;
         cursor: pointer;
-        background: white;
+        // background: white;
         border-radius: 20%;
     }
 
     #btn
     {
-        top: 13px;
-        left: 5px;
+        position: fixed;
+        left: 6px;
         z-index: 1;
         /* font-size: 24px; */
         // color: #21146c;
@@ -68,11 +101,11 @@ label
     {
         z-index: 1111;
         left: -195px;
-        top: 17px;
+        // top: 17px;
 
 
-        font-size: 20px;
-        color: #21146c;
+        font-size: 22px;
+        color: #6c757d;
         padding: 4px 9px;
         transition:  all .5s ease;
     }
@@ -92,17 +125,131 @@ label
 {
     position: fixed;
     z-index: 34;
-    top: 220px;
-    left: 0;
-    width: 270px;
-    max-height: 100%;
-    background-color: red;
+    top: 0;
+    left: -327px;
+    width: 327px;
+    height: 100%;
+    background-color: #f0f1f1;
     transition: all .5s ease;
+
+    h6, h5, i
+    {
+        margin-right: 13px;
+    }
+
+    li
+    {
+        // margin-bottom: 15px;
+        padding: 0;
+        height: 35px;
+        padding-top: 10px;
+
+        a
+        {
+            color: var(--color7);
+            display: flex;
+            align-items: center;
+            margin-left: 3px;
+
+
+            span
+            {
+                // margin-top: 6px;
+                font-size: 19px;
+            }
+        }
+    }
 
     .nav-side
     {
         height: 32%;
-        padding-left: 10px;
-        margin-top: 1.6rem;
+        // padding-left: 10px;
+        // margin-top: 1.6rem;
+
+        .profile
+        {
+            // width: 65%;
+            height: 30%;
+
+            .icon
+            {
+                h5
+                {
+                    padding: 2px 6px;
+                    background-color: #bfbbbb;
+                    color: var(--color4);
+                    font-size: 15px;
+                    border-radius: 5px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .name
+            {
+                h6
+                {
+                    font-weight: bold;
+
+                    span
+                    {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .icon-chevron
+            {
+                font-size: 13px;
+                font-weight: bold;
+                color: var(--color5);
+
+                i
+                {
+                    height: 9px;
+                }
+            }
+        }
+    }
+
+    .content-side
+    {
+        .favorites
+        {
+            .head
+            {   
+                padding-left: 15px;
+                width: fit-content;
+                height: fit-content;
+
+                h5
+                {
+                    // padding-left: 15px;
+                    font-size: 14px;    
+                    color: var(--color5);
+                    font-weight: 500;
+                    margin-bottom: 0;
+
+                    &:hover
+                    {
+                        color: var(--color7);
+                    }
+                }
+            }
+
+            ul
+            {
+                i
+                {
+                    font-size: 20px;
+                    color: var(--color5);
+                }
+
+                span {
+                    font-size: 17px;
+                }
+
+
+            }
+        }
     }
 }
