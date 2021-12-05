@@ -306,7 +306,7 @@ header
                         }
                     }
 
-                    .item-menu
+                    #itemMenu
                     {
                         width: 30px;
                         height: 28px;
@@ -314,14 +314,10 @@ header
                         background-color: var(--color4);
                         box-shadow: 0 0 5px 3px #cdc3c3;
                         display: none;
-
-                        // &:hover ~ .content > .column-items #show-hover
-                        // {
-                        //     display: block;
-                        // }
                     }
 
                 }
+
 
                 .hidden-columns
                 {
@@ -335,11 +331,12 @@ header
             }
 
 
+
             .content
             {   
                 width: 125.5%;
 
-                .column-items
+                #itemColumns
                 {
                     width: 29.5%;
                     margin-right: 20px;
@@ -519,7 +516,6 @@ header
         }
     }
 }
-
 
 
 
